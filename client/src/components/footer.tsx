@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Facebook, Instagram, Twitter } from "lucide-react";
+import { SiTiktok } from "react-icons/si";
 
 export default function Footer() {
   return (
@@ -40,6 +41,13 @@ export default function Footer() {
                 data-testid="link-social-twitter"
               >
                 <Twitter className="w-5 h-5" />
+              </a>
+              <a 
+                href="#" 
+                className="w-10 h-10 bg-cream-700 rounded-full flex items-center justify-center hover:bg-gold-500 transition-colors"
+                data-testid="link-social-tiktok"
+              >
+                <SiTiktok className="w-5 h-5" />
               </a>
             </div>
           </div>

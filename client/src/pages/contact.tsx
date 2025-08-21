@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import { Phone, Mail, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
+import { SiTiktok } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -144,6 +145,13 @@ export default function Contact() {
                     data-testid="link-twitter"
                   >
                     <Twitter className="w-5 h-5" />
+                  </a>
+                  <a 
+                    href="#" 
+                    className="w-12 h-12 bg-cream-200 rounded-full flex items-center justify-center hover:bg-gold-500 hover:text-white transition-colors"
+                    data-testid="link-tiktok"
+                  >
+                    <SiTiktok className="w-5 h-5" />
                   </a>
                 </div>
               </div>
