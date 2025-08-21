@@ -62,6 +62,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/services" data-testid="link-footer-services">
+                  <span className="text-cream-200 hover:text-gold-500 transition-colors">Services</span>
+                </Link>
+              </li>
+              <li>
                 <Link href="/design-process" data-testid="link-footer-process">
                   <span className="text-cream-200 hover:text-gold-500 transition-colors">Our Process</span>
                 </Link>
