@@ -29,8 +29,9 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" data-testid="link-home">
-            <div className="text-2xl font-serif font-bold">
+            <div className="text-xl md:text-2xl font-serif font-bold leading-tight">
               <span className="text-charcoal-800">ARTFUL</span><span className="text-gold-500"> STRUCTURES</span>
+              <div className="text-xs md:text-sm font-medium text-charcoal-600 -mt-1">LIMITED</div>
             </div>
           </Link>
           

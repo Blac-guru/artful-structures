@@ -9,8 +9,11 @@ export default function Footer() {
           
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="text-3xl font-serif font-bold mb-4">
-              <span className="text-cream-100">ARTFUL</span><span className="text-gold-500"> STRUCTURES</span>
+            <div className="mb-4">
+              <div className="text-2xl md:text-3xl font-serif font-bold leading-tight">
+                <span className="text-cream-100">ARTFUL</span><span className="text-gold-500"> STRUCTURES</span>
+              </div>
+              <div className="text-sm font-medium text-cream-300 -mt-1">LIMITED</div>
             </div>
             <p className="text-cream-200 mb-6 max-w-md">
               Transforming spaces with artful design. We create sophisticated interiors and exteriors 
