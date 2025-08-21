@@ -1,0 +1,89 @@
+Project Name: ARTFUL STRUCTURES LIMITED Website
+
+Objective:
+Build a professional, responsive website for ARTFUL STRUCTURES LIMITED, an interior and exterior design company.
+The design and layout should follow the flow and UI/UX of mileledesigns.co.ke while the portfolio/product presentation should resemble palacinainteriors.com.
+
+The site should have the following pages: Home, About, Design Process, Portfolio, Contact.
+
+⸻
+
+🔹 General Requirements
+	•	Look & Feel: Elegant, professional, minimal, spacious design (similar to mileledesigns.co.ke).
+	•	Responsive: Fully mobile-friendly with adaptive layouts.
+	•	Performance: Lightweight, optimized images.
+	•	Navigation: Sticky top navbar with links to all main pages.
+	•	Typography: Use clean fonts (e.g., Playfair Display for headings, Inter or Lato for body).
+	•	Colors: Neutral and luxury tones (cream/white background, charcoal/black text, gold/accent highlights).
+	•	Footer: Include quick links, contact info, and social media icons.
+
+⸻
+
+🔹 Page Requirements
+
+1. Home Page
+	•	Full-width hero section with luxury interior background image.
+	•	Tagline overlay text: “Transforming Spaces with Artful Design”.
+	•	CTA button: “Explore Our Work” (links to Portfolio).
+	•	Service highlights: 4 cards → Residential, Commercial, Hospitality, Transformations. Each with icon/image + short description + “View More” link.
+	•	About teaser section: Short intro + supporting image + button “Read Our Story” (links to About page).
+	•	CTA strip: Bold text “Let’s Transform Your Space” with button “Contact Us”.
+
+⸻
+
+2. About Page
+	•	Hero banner with title “About ARTFUL STRUCTURES LIMITED”.
+	•	Storytelling section: Company history, mission, values, supported by visuals.
+	•	Section: Target customers + problems solved (icons/visuals).
+
+⸻
+
+3. Design Process Page
+	•	Hero banner with title “Our Design Process”.
+	•	Step-by-step visual process:
+	1.	Consultation
+	2.	Concept & Design
+	3.	Approval
+	4.	Installation
+	•	Each step has an icon, short description, and image.
+	•	End with CTA section: “Start Your Project” button linking to Contact.
+
+⸻
+
+4. Portfolio Page
+	•	Hero banner with title “Our Portfolio”.
+	•	Navigation tabs/dropdown for categories: Residential, Commercial, Hospitality, Transformations.
+	•	Gallery grid (3–4 columns) with image cards for each category.
+	•	Clicking an image opens a larger modal with description.
+	•	End with CTA: “Book a Consultation”.
+
+⸻
+
+5. Contact Page
+	•	Hero banner with text “Let’s Talk”.
+	•	Contact info section: Phone, Email, Physical Address, Social Media icons.
+	•	Contact form: Fields → Name, Email, Phone, Message. Submit button should send form data to backend or email service (basic functionality to be included).
+	•	Optional: Embedded map for office location.
+
+⸻
+
+🔹 Technical Specifications
+	•	Framework: Use Next.js or React for frontend (modern, SEO-friendly).
+	•	Styling: Tailwind CSS or CSS modules for clean, responsive design.
+	•	Assets: Use placeholder images (replace later with real ones).
+	•	Contact Form: Use simple form handling (e.g., email service API or mock backend).
+	•	Deployment: Make site deployable on Replit’s hosting or export-ready for Vercel/Netlify.
+
+⸻
+
+🔹 References
+	•	Flow & UI/UX Reference: mileledesigns.co.ke
+	•	Portfolio Presentation Reference: palacinainteriors.com
+
+⸻
+
+✅ Instruction for Replit AI:
+Use the above specifications to generate the full codebase for the website, with clean and reusable components.
+Each page should be implemented as a separate route/component.
+Ensure responsiveness and professional styling.
+Provide comments in the code to indicate where to replace placeholder images and text with actual company content.
