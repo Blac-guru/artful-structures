@@ -9,12 +9,7 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <HeroSection
-        title={
-          <>
-            Transforming Spaces with<br />
-            <span className="text-gold-400">Artful Design</span>
-          </>
-        }
+        title="Transforming Spaces with Artful Design"
         subtitle="Creating sophisticated interiors and exteriors that reflect your unique style and enhance your lifestyle"
         ctaText="Explore Our Work"
         ctaLink="/portfolio"

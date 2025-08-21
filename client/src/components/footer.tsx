@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="text-3xl font-serif font-bold mb-4">
-              ARTFUL<span className="text-gold-500"> STRUCTURES</span>
+              <span className="text-cream-100">ARTFUL</span><span className="text-gold-500"> STRUCTURES</span>
             </div>
             <p className="text-cream-200 mb-6 max-w-md">
               Transforming spaces with artful design. We create sophisticated interiors and exteriors 
@@ -84,7 +84,7 @@ export default function Footer() {
         <div className="border-t border-cream-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-cream-200 text-sm mb-4 md:mb-0">
-              © 2024 Artful Structures Limited. All rights reserved.
+              © 2025 Artful Structures Limited. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-cream-200 hover:text-gold-500 transition-colors" data-testid="link-privacy">
