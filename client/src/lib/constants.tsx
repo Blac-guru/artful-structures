@@ -32,7 +32,11 @@ export const PORTFOLIO_PROJECTS = [
     category: "residential",
     categoryLabel: "RESIDENTIAL",
     image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    description: "A contemporary family home that perfectly balances modern design with comfortable living. The space features clean architectural lines, a neutral color palette, and carefully selected furnishings that create a sophisticated yet welcoming atmosphere. Natural light floods through large windows, highlighting the beautiful hardwood floors and custom built-ins."
+    description: "A contemporary family home that perfectly balances modern design with comfortable living. The space features clean architectural lines, a neutral color palette, and carefully selected furnishings that create a sophisticated yet welcoming atmosphere. Natural light floods through large windows, highlighting the beautiful hardwood floors and custom built-ins.",
+    location: "Westlands, Nairobi",
+    size: "2,500 sq ft",
+    duration: "3 months",
+    client: "Private Residence"
   },
   {
     id: "luxury-bedroom",
@@ -40,7 +44,11 @@ export const PORTFOLIO_PROJECTS = [
     category: "residential", 
     categoryLabel: "RESIDENTIAL",
     image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    description: "An elegant master bedroom designed as a personal sanctuary. The space features a custom upholstered headboard, luxury bedding, and carefully curated artwork. Warm ambient lighting creates a relaxing atmosphere, while the neutral color scheme with gold accents adds sophistication and timeless appeal."
+    description: "An elegant master bedroom designed as a personal sanctuary. The space features a custom upholstered headboard, luxury bedding, and carefully curated artwork. Warm ambient lighting creates a relaxing atmosphere, while the neutral color scheme with gold accents adds sophistication and timeless appeal.",
+    location: "Karen, Nairobi",
+    size: "400 sq ft",
+    duration: "6 weeks",
+    client: "Private Client"
   },
   {
     id: "kitchen-design", 
@@ -48,7 +56,11 @@ export const PORTFOLIO_PROJECTS = [
     category: "residential",
     categoryLabel: "RESIDENTIAL", 
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    description: "An open-concept kitchen that seamlessly blends functionality with style. Premium materials including marble countertops and custom cabinetry create a luxurious feel, while smart storage solutions maximize efficiency. The design incorporates modern appliances and thoughtful lighting to create the perfect space for cooking and entertaining."
+    description: "An open-concept kitchen that seamlessly blends functionality with style. Premium materials including marble countertops and custom cabinetry create a luxurious feel, while smart storage solutions maximize efficiency. The design incorporates modern appliances and thoughtful lighting to create the perfect space for cooking and entertaining.",
+    location: "Kilimani, Nairobi",
+    size: "300 sq ft",
+    duration: "8 weeks",
+    client: "Family Home"
   },
   {
     id: "modern-office",
@@ -56,7 +68,11 @@ export const PORTFOLIO_PROJECTS = [
     category: "commercial",
     categoryLabel: "COMMERCIAL",
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    description: "A dynamic workspace design that promotes collaboration and productivity. The office features modern furniture, innovative layout solutions, and sophisticated color schemes that create an inspiring work environment. Natural light and biophilic design elements enhance employee wellbeing and satisfaction."
+    description: "A dynamic workspace design that promotes collaboration and productivity. The office features modern furniture, innovative layout solutions, and sophisticated color schemes that create an inspiring work environment. Natural light and biophilic design elements enhance employee wellbeing and satisfaction.",
+    location: "Upper Hill, Nairobi",
+    size: "5,000 sq ft",
+    duration: "4 months",
+    client: "Tech Company"
   },
   {
     id: "retail-space",
@@ -64,7 +80,11 @@ export const PORTFOLIO_PROJECTS = [
     category: "commercial",
     categoryLabel: "COMMERCIAL",
     image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    description: "A premium retail environment designed to enhance the customer experience. The showroom features sophisticated product displays, strategic lighting, and luxurious finishes that create an aspirational shopping atmosphere. Every detail is carefully considered to reflect the brand's premium positioning."
+    description: "A premium retail environment designed to enhance the customer experience. The showroom features sophisticated product displays, strategic lighting, and luxurious finishes that create an aspirational shopping atmosphere. Every detail is carefully considered to reflect the brand's premium positioning.",
+    location: "Sarit Centre, Nairobi",
+    size: "1,200 sq ft",
+    duration: "6 weeks",
+    client: "Luxury Brand"
   },
   {
     id: "hotel-lobby",

@@ -1,171 +1,186 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { 
-  Home, 
-  Building, 
-  Utensils, 
-  Wrench, 
-  Palette, 
+import {
+  Home,
+  Building,
+  Utensils,
+  Wrench,
+  Palette,
   Lightbulb,
   CheckCircle,
   ArrowRight,
   Users,
   Clock,
-  Shield
+  Shield,
 } from "lucide-react";
 
 const services = [
   {
-    id: "residential",
-    title: "Residential Interior Design",
-    subtitle: "Creating Homes That Reflect Your Lifestyle",
-    description: "Transform your living spaces into personalized sanctuaries that perfectly balance comfort, functionality, and aesthetic appeal. From single rooms to complete home makeovers, we create interiors that tell your unique story.",
+    id: "home-interior",
+    title: "Home Interior Design",
+    subtitle: "Crafting Luxurious Living Experiences",
+    description:
+      "Transform your home into a sophisticated sanctuary that reflects your personality and lifestyle. Our comprehensive home interior design service combines elegant aesthetics with functional living solutions, creating spaces that are both beautiful and practical for modern family life.",
     icon: <Home className="w-8 h-8" />,
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    image:
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
     features: [
-      "Complete home design and renovation",
-      "Room-by-room interior planning",
-      "Custom furniture design and selection",
-      "Color schemes and material selection",
-      "Lighting design and installation",
-      "Space planning and optimization"
+      "Complete home design and styling",
+      "Living room and bedroom design",
+      "Kitchen and dining area planning",
+      "Bathroom design and renovation",
+      "Custom storage and built-in solutions",
+      "Luxury finishes and material selection",
     ],
     process: [
-      "Initial consultation and space assessment",
-      "Design concept development",
-      "3D visualization and mood boards",
-      "Implementation and project management"
-    ]
+      "Lifestyle assessment and space analysis",
+      "Concept development and mood boards",
+      "3D visualization and walkthroughs",
+      "Project management and installation",
+    ],
   },
   {
-    id: "commercial",
+    id: "commercial-interior",
     title: "Commercial Interior Design",
-    subtitle: "Inspiring Workspaces That Drive Success",
-    description: "Design productive, inspiring work environments that enhance employee satisfaction and impress clients. We create commercial spaces that reflect your brand identity while optimizing functionality and workflow.",
+    subtitle: "Professional Spaces That Inspire Excellence",
+    description:
+      "Create impressive commercial environments that enhance productivity, reflect your brand identity, and leave lasting impressions on clients. From modern offices to retail spaces, we design commercial interiors that drive business success and employee satisfaction.",
     icon: <Building className="w-8 h-8" />,
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    image:
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
     features: [
-      "Office design and layout planning",
-      "Reception and lobby design",
-      "Meeting room and conference facilities",
-      "Break room and recreational spaces",
-      "Brand integration and corporate identity",
-      "Ergonomic furniture selection"
+      "Corporate office design and layout",
+      "Reception and lobby areas",
+      "Conference rooms and meeting spaces",
+      "Retail and showroom design",
+      "Restaurant and hospitality interiors",
+      "Brand integration and signage",
     ],
     process: [
-      "Business needs analysis",
-      "Workflow optimization planning",
-      "Brand-aligned design development",
-      "Phased implementation with minimal disruption"
-    ]
-  },
-  {
-    id: "hospitality",
-    title: "Hospitality Design",
-    subtitle: "Creating Memorable Guest Experiences",
-    description: "Design exceptional hospitality spaces that create lasting impressions. From boutique hotels to fine dining restaurants, we craft environments that enhance guest experiences and drive business success.",
-    icon: <Utensils className="w-8 h-8" />,
-    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    features: [
-      "Hotel lobby and guest room design",
-      "Restaurant and bar interior design",
-      "Spa and wellness facility design",
-      "Event space and banquet hall design",
-      "Outdoor dining and entertainment areas",
-      "Custom hospitality furniture"
+      "Business requirements analysis",
+      "Space planning and workflow optimization",
+      "Design development and approval",
+      "Coordinated implementation with minimal disruption",
     ],
-    process: [
-      "Guest experience journey mapping",
-      "Concept design and theme development",
-      "Detailed design and specification",
-      "Installation and staff training support"
-    ]
   },
   {
-    id: "renovation",
-    title: "Space Renovation & Transformation",
-    subtitle: "Breathing New Life Into Existing Spaces",
-    description: "Completely transform outdated or underutilized spaces with strategic renovations. We maximize potential through creative reimagining, structural improvements, and modern design solutions.",
-    icon: <Wrench className="w-8 h-8" />,
-    image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    features: [
-      "Complete space restructuring",
-      "Kitchen and bathroom renovations",
-      "Basement and attic conversions",
-      "Open floor plan creation",
-      "Sustainable renovation solutions",
-      "Heritage building restoration"
-    ],
-    process: [
-      "Structural assessment and planning",
-      "Permit acquisition and compliance",
-      "Demolition and construction management",
-      "Final design implementation"
-    ]
-  },
-  {
-    id: "consultation",
-    title: "Design Consultation & Planning",
-    subtitle: "Expert Guidance for Your Design Journey",
-    description: "Get professional design advice and strategic planning for your project. Our consultation services help you make informed decisions about layouts, materials, colors, and budget allocation.",
-    icon: <Palette className="w-8 h-8" />,
-    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    features: [
-      "Design strategy and concept development",
-      "Space planning and layout optimization",
-      "Material and finish selection guidance",
-      "Budget planning and cost estimation",
-      "Vendor and contractor recommendations",
-      "Project timeline development"
-    ],
-    process: [
-      "Initial design assessment",
-      "Comprehensive planning session",
-      "Detailed recommendations report",
-      "Implementation guidance and support"
-    ]
-  },
-  {
-    id: "custom-furniture",
-    title: "Custom Furniture Design",
-    subtitle: "Bespoke Pieces Crafted for Your Space",
-    description: "Create unique, custom furniture pieces that perfectly fit your space and style. From built-in storage solutions to statement pieces, we design and craft furniture that's both beautiful and functional.",
+    id: "gypsum-ceilings",
+    title: "Gypsum Ceilings",
+    subtitle: "Architectural Excellence Above You",
+    description:
+      "Elevate your spaces with our expertly crafted gypsum ceiling solutions. We design and install stunning ceiling features that add architectural interest, improve acoustics, and provide elegant lighting integration while maintaining the highest standards of craftsmanship.",
     icon: <Lightbulb className="w-8 h-8" />,
-    image: "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    image:
+      "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
     features: [
-      "Bespoke furniture design",
-      "Built-in storage solutions",
-      "Custom cabinetry and millwork",
-      "Upholstery and reupholstery services",
-      "Antique furniture restoration",
-      "Space-specific furniture solutions"
+      "Custom gypsum ceiling design",
+      "Coffered and tray ceiling installation",
+      "Integrated lighting solutions",
+      "Acoustic ceiling treatments",
+      "False ceiling installations",
+      "Decorative ceiling features",
     ],
     process: [
-      "Design concept and sketching",
-      "Material selection and sourcing",
-      "Craftsman coordination and production",
-      "Delivery and installation"
-    ]
-  }
+      "Structural assessment and measurements",
+      "Custom design and engineering",
+      "Professional installation and finishing",
+      "Lighting integration and final touches",
+    ],
+  },
+  {
+    id: "flooring-services",
+    title: "Flooring Services",
+    subtitle: "Foundation of Beautiful Design",
+    description:
+      "Complete your interior transformation with our comprehensive flooring solutions. From luxurious hardwood to contemporary tiles, we provide expert installation and finishing services that create stunning foundations for your beautifully designed spaces.",
+    icon: <CheckCircle className="w-8 h-8" />,
+    image:
+      "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    features: [
+      "Hardwood flooring installation",
+      "Luxury vinyl and laminate flooring",
+      "Ceramic and porcelain tile installation",
+      "Natural stone and marble flooring",
+      "Carpet and area rug installation",
+      "Floor refinishing and restoration",
+    ],
+    process: [
+      "Flooring consultation and material selection",
+      "Subfloor preparation and assessment",
+      "Professional installation and finishing",
+      "Quality inspection and final cleanup",
+    ],
+  },
+  {
+    id: "painting-services",
+    title: "Painting Services",
+    subtitle: "Color That Transforms Spaces",
+    description:
+      "Bring your design vision to life with our professional painting services. We combine premium materials, expert techniques, and meticulous attention to detail to deliver flawless finishes that complement your interior design and protect your investment.",
+    icon: <Palette className="w-8 h-8" />,
+    image:
+      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    features: [
+      "Interior and exterior painting",
+      "Color consultation and design",
+      "Premium paint and finish selection",
+      "Decorative painting techniques",
+      "Wallpaper installation and removal",
+      "Surface preparation and priming",
+    ],
+    process: [
+      "Color consultation and sample testing",
+      "Surface preparation and protection",
+      "Professional painting and finishing",
+      "Quality inspection and touch-ups",
+    ],
+  },
+  {
+    id: "office-partitioning",
+    title: "Office Partitioning",
+    subtitle: "Smart Space Division Solutions",
+    description:
+      "Optimize your workspace with our innovative office partitioning systems. We create flexible, functional divisions that enhance privacy, improve acoustics, and adapt to changing business needs while maintaining an open, collaborative atmosphere.",
+    icon: <Building className="w-8 h-8" />,
+    image:
+      "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    features: [
+      "Glass partition systems",
+      "Movable and modular partitions",
+      "Acoustic partition solutions",
+      "Custom millwork partitions",
+      "Executive office enclosures",
+      "Conference room divisions",
+    ],
+    process: [
+      "Workspace analysis and planning",
+      "Partition system design and selection",
+      "Professional installation and integration",
+      "Testing and final adjustments",
+    ],
+  },
 ];
 
 const whyChooseUs = [
   {
     icon: <Users className="w-8 h-8 text-gold-500" />,
     title: "Expert Team",
-    description: "Our experienced designers bring creativity, technical expertise, and passion to every project."
+    description:
+      "Our experienced designers bring creativity, technical expertise, and passion to every project.",
   },
   {
     icon: <Clock className="w-8 h-8 text-gold-500" />,
     title: "Timely Delivery",
-    description: "We respect your timeline and deliver projects on schedule without compromising quality."
+    description:
+      "We respect your timeline and deliver projects on schedule without compromising quality.",
   },
   {
     icon: <Shield className="w-8 h-8 text-gold-500" />,
     title: "Quality Guarantee",
-    description: "We stand behind our work with comprehensive warranties and ongoing support."
-  }
+    description:
+      "We stand behind our work with comprehensive warranties and ongoing support.",
+  },
 ];
 
 export default function Services() {
@@ -179,7 +194,8 @@ export default function Services() {
               Our <span className="text-gold-500">Services</span>
             </h1>
             <p className="text-xl text-charcoal-600 max-w-3xl mx-auto">
-              Comprehensive design solutions tailored to transform your spaces and exceed your expectations
+              Comprehensive design solutions tailored to transform your spaces
+              and exceed your expectations
             </p>
           </div>
         </div>
@@ -190,14 +206,14 @@ export default function Services() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="space-y-20">
             {services.map((service, index) => (
-              <div 
+              <div
                 key={service.id}
                 className={`grid lg:grid-cols-2 gap-12 items-center ${
-                  index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
+                  index % 2 === 1 ? "lg:grid-flow-col-dense" : ""
                 }`}
                 data-testid={`service-${service.id}`}
               >
-                <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
+                <div className={index % 2 === 1 ? "lg:col-start-2" : ""}>
                   <img
                     src={service.image}
                     alt={service.title}
@@ -205,40 +221,54 @@ export default function Services() {
                     data-testid={`img-${service.id}`}
                   />
                 </div>
-                
-                <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>
+
+                <div className={index % 2 === 1 ? "lg:col-start-1" : ""}>
                   <div className="flex items-center mb-4">
                     <div className="w-16 h-16 bg-gold-500 rounded-full flex items-center justify-center text-white mr-4">
                       {service.icon}
                     </div>
                     <div>
-                      <h2 className="font-serif text-3xl font-bold text-charcoal-800">{service.title}</h2>
-                      <p className="text-lg font-medium text-gold-500">{service.subtitle}</p>
+                      <h2 className="font-serif text-3xl font-bold text-charcoal-800">
+                        {service.title}
+                      </h2>
+                      <p className="text-lg font-medium text-gold-500">
+                        {service.subtitle}
+                      </p>
                     </div>
                   </div>
-                  
+
                   <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
                     {service.description}
                   </p>
 
                   <div className="grid md:grid-cols-2 gap-6 mb-8">
                     <div>
-                      <h4 className="font-semibold text-charcoal-800 mb-3">What We Offer:</h4>
+                      <h4 className="font-semibold text-charcoal-800 mb-3">
+                        What We Offer:
+                      </h4>
                       <ul className="space-y-2">
                         {service.features.map((feature, idx) => (
-                          <li key={idx} className="flex items-start text-charcoal-600">
+                          <li
+                            key={idx}
+                            className="flex items-start text-charcoal-600"
+                          >
                             <CheckCircle className="w-4 h-4 text-gold-500 mr-2 mt-1 flex-shrink-0" />
                             <span className="text-sm">{feature}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
-                    
+
                     <div>
-                      <h4 className="font-semibold text-charcoal-800 mb-3">Our Process:</h4>
+                      <h4 className="font-semibold text-charcoal-800 mb-3">
+                        Our Process:
+                      </h4>
                       <ul className="space-y-2">
                         {service.process.map((step, idx) => (
-                          <li key={idx} className="flex items-start text-charcoal-600">
+                          <li
+                            key={idx}
+                            className="flex items-start text-charcoal-600"
+                          >
                             <ArrowRight className="w-4 h-4 text-gold-500 mr-2 mt-1 flex-shrink-0" />
                             <span className="text-sm">{step}</span>
                           </li>
@@ -247,7 +277,10 @@ export default function Services() {
                     </div>
                   </div>
 
-                  <Link href="/contact" data-testid={`button-${service.id}-consultation`}>
+                  <Link
+                    href="/contact"
+                    data-testid={`button-${service.id}-consultation`}
+                  >
                     <Button className="bg-gold-500 text-white hover:bg-gold-600">
                       Get Consultation
                     </Button>
@@ -264,21 +297,31 @@ export default function Services() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl font-bold text-charcoal-800 mb-6">
-              Why Choose <span className="text-gold-500">Artful Structures</span>
+              Why Choose{" "}
+              <span className="text-gold-500">Artful Structures</span>
             </h2>
             <p className="text-lg text-charcoal-600 max-w-2xl mx-auto">
-              We combine creativity, expertise, and dedication to deliver exceptional design solutions
+              We combine creativity, expertise, and dedication to deliver
+              exceptional design solutions
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8" data-testid="why-choose-us">
+          <div
+            className="grid md:grid-cols-3 gap-8"
+            data-testid="why-choose-us"
+          >
             {whyChooseUs.map((item, index) => (
-              <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Card
+                key={index}
+                className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
                 <CardContent className="p-8 text-center">
                   <div className="w-16 h-16 bg-cream-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     {item.icon}
                   </div>
-                  <h3 className="font-serif text-xl font-semibold text-charcoal-800 mb-4">{item.title}</h3>
+                  <h3 className="font-serif text-xl font-semibold text-charcoal-800 mb-4">
+                    {item.title}
+                  </h3>
                   <p className="text-charcoal-600">{item.description}</p>
                 </CardContent>
               </Card>
@@ -294,19 +337,23 @@ export default function Services() {
             Ready to Transform Your Space?
           </h2>
           <p className="text-xl text-cream-100 mb-8 max-w-2xl mx-auto">
-            Contact us today to discuss your project and discover how our expert team can bring your vision to life
+            Contact us today to discuss your project and discover how our expert
+            team can bring your vision to life
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" data-testid="button-get-quote">
-              <Button size="lg" className="bg-gold-500 text-white hover:bg-gold-600">
+              <Button
+                size="lg"
+                className="bg-gold-500 text-white hover:bg-gold-600"
+              >
                 Get Free Quote
               </Button>
             </Link>
             <Link href="/portfolio" data-testid="button-view-work">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 variant="outline"
-                className="border-2 border-cream-100 text-cream-100 hover:bg-cream-100 hover:text-charcoal-800"
+                className="border-2 border-cream-100 text-gold-500 hover:bg-cream-100 hover:text-charcoal-800"
               >
                 View Our Work
               </Button>

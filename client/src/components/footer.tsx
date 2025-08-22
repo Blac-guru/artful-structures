@@ -29,21 +29,21 @@ export default function Footer() {
                 <Facebook className="w-5 h-5" />
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/artfulstructures_.ltd?igsh=a3NxNDJ5NTR6NmJ0" 
                 className="w-10 h-10 bg-cream-700 rounded-full flex items-center justify-center hover:bg-gold-500 transition-colors"
                 data-testid="link-social-instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
-                href="#" 
+                href="https://x.com/ARTFULSTRUCTURE" 
                 className="w-10 h-10 bg-cream-700 rounded-full flex items-center justify-center hover:bg-gold-500 transition-colors"
                 data-testid="link-social-twitter"
               >
                 <Twitter className="w-5 h-5" />
               </a>
               <a 
-                href="#" 
+                href="www.tiktok.com/@artfulstructuresltd" 
                 className="w-10 h-10 bg-cream-700 rounded-full flex items-center justify-center hover:bg-gold-500 transition-colors"
                 data-testid="link-social-tiktok"
               >
@@ -88,10 +88,26 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><span className="text-cream-200">Residential Design</span></li>
-              <li><span className="text-cream-200">Commercial Design</span></li>
-              <li><span className="text-cream-200">Hospitality Design</span></li>
-              <li><span className="text-cream-200">Space Renovation</span></li>
+              <li>
+                <Link href="/services" data-testid="link-footer-residential">
+                  <span className="text-cream-200 hover:text-gold-500 transition-colors">Home Interior Design</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" data-testid="link-footer-commercial">
+                  <span className="text-cream-200 hover:text-gold-500 transition-colors">Commercial Design</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" data-testid="link-footer-gypsum">
+                  <span className="text-cream-200 hover:text-gold-500 transition-colors">Gypsum Ceilings</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" data-testid="link-footer-flooring">
+                  <span className="text-cream-200 hover:text-gold-500 transition-colors">Flooring Services</span>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
