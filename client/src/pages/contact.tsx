@@ -295,20 +295,26 @@ export default function Contact() {
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
-                            <SelectItem value="residential">
-                              Residential Design
+                            <SelectItem value="home-interior">
+                              Home Interior Design
                             </SelectItem>
-                            <SelectItem value="commercial">
-                              Commercial Design
+                            <SelectItem value="commercial-interior">
+                              Commercial Interior Design
                             </SelectItem>
-                            <SelectItem value="hospitality">
-                              Hospitality Design
+                            <SelectItem value="gypsum-ceilings">
+                              Gypsum Ceilings
                             </SelectItem>
-                            <SelectItem value="renovation">
-                              Space Renovation
+                            <SelectItem value="flooring-services">
+                              Flooring Services
                             </SelectItem>
-                            <SelectItem value="consultation">
-                              Design Consultation
+                            <SelectItem value="painting-services">
+                              Painting Services
+                            </SelectItem>
+                            <SelectItem value="office-partitioning">
+                              Office Partitioning
+                            </SelectItem>
+                            <SelectItem value="other">
+                              Other
                             </SelectItem>
                           </SelectContent>
                         </Select>
