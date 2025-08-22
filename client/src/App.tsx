@@ -15,6 +15,7 @@ import Footer from "@/components/footer";
 import Loading from "@/components/loading";
 import PageTransition from "@/components/page-transition";
 import { usePageLoading } from "@/hooks/use-loading";
+import { useScrollToTop } from "@/hooks/use-scroll-to-top";
 
 function Router() {
   return (
@@ -32,6 +33,7 @@ function Router() {
 
 function App() {
   const isLoading = usePageLoading();
+  useScrollToTop();
 
   return (
     <QueryClientProvider client={queryClient}>
