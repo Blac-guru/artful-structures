@@ -20,7 +20,7 @@ export default function HeroSection({
   showScrollIndicator = false 
 }: HeroSectionProps) {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20">
+    <section className="relative min-h-screen flex items-center justify-center pt-20" data-dark-section="true">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat hero-gradient"
