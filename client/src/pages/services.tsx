@@ -72,7 +72,7 @@ const services = [
       "Elevate your spaces with our expertly crafted gypsum ceiling solutions. We design and install stunning ceiling features that add architectural interest, improve acoustics, and provide elegant lighting integration while maintaining the highest standards of craftsmanship.",
     icon: <Lightbulb className="w-8 h-8" />,
     image:
-      "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      "https://images.unsplash.com/photo-1563973153236-794eef98609f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     features: [
       "Custom gypsum ceiling design",
       "Coffered and tray ceiling installation",
@@ -96,7 +96,7 @@ const services = [
       "Complete your interior transformation with our comprehensive flooring solutions. From luxurious hardwood to contemporary tiles, we provide expert installation and finishing services that create stunning foundations for your beautifully designed spaces.",
     icon: <CheckCircle className="w-8 h-8" />,
     image:
-      "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      "https://images.unsplash.com/photo-1569152811536-fb47aced8409?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     features: [
       "Hardwood flooring installation",
       "Luxury vinyl and laminate flooring",
@@ -120,7 +120,7 @@ const services = [
       "Bring your design vision to life with our professional painting services. We combine premium materials, expert techniques, and meticulous attention to detail to deliver flawless finishes that complement your interior design and protect your investment.",
     icon: <Palette className="w-8 h-8" />,
     image:
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      "https://images.unsplash.com/photo-1562259949-e8e7689d7828?q=80&w=831&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     features: [
       "Interior and exterior painting",
       "Color consultation and design",
@@ -144,7 +144,7 @@ const services = [
       "Optimize your workspace with our innovative office partitioning systems. We create flexible, functional divisions that enhance privacy, improve acoustics, and adapt to changing business needs while maintaining an open, collaborative atmosphere.",
     icon: <Building className="w-8 h-8" />,
     image:
-      "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      "https://images.unsplash.com/photo-1564540574859-0dfb63985953?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     features: [
       "Glass partition systems",
       "Movable and modular partitions",

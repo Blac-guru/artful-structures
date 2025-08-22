@@ -12,6 +12,9 @@ import Portfolio from "@/pages/portfolio";
 import Contact from "@/pages/contact";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
+import Loading from "@/components/loading";
+import PageTransition from "@/components/page-transition";
+import { usePageLoading } from "@/hooks/use-loading";
 
 function Router() {
   return (
@@ -28,13 +31,18 @@ function Router() {
 }
 
 function App() {
+  const isLoading = usePageLoading();
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        {isLoading && <Loading />}
         <div className="min-h-screen flex flex-col">
           <Navigation />
           <main className="flex-1">
-            <Router />
+            <PageTransition>
+              <Router />
+            </PageTransition>
           </main>
           <Footer />
         </div>
