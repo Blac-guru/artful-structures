@@ -118,8 +118,7 @@ export const PORTFOLIO_PROJECTS = [
     title: "Fine Dining Restaurant",
     category: "hospitality",
     categoryLabel: "HOSPITALITY",
-    image:
-      "https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    image: "https://images.pexels.com/photos/2290753/pexels-photo-2290753.jpeg",
     description:
       "An intimate dining environment that enhances the culinary experience. The restaurant design features carefully planned acoustics, sophisticated lighting design, and premium materials that create the perfect atmosphere for fine dining. Every element works together to create a memorable dining experience.",
   },

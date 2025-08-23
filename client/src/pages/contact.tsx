@@ -116,7 +116,8 @@ export default function Contact() {
                       <h3 className="font-semibold text-charcoal-800 mb-2">
                         Phone
                       </h3>
-                      <p className="text-charcoal-600">+254 700 123 456</p>
+                      <p className="text-charcoal-600">+254 719118500 /</p>
+                      <p className="text-charcoal-600">+254 727166425</p>
                       <p className="text-charcoal-600 text-sm">
                         Mon - Fri, 8:00 AM - 6:00 PM
                       </p>
@@ -136,7 +137,7 @@ export default function Contact() {
                         Email
                       </h3>
                       <p className="text-charcoal-600">
-                        hello@artfulstructures.com
+                        info.craftarchitectures@gmail.com
                       </p>
                       <p className="text-charcoal-600 text-sm">
                         We'll respond within 24 hours
@@ -157,9 +158,9 @@ export default function Contact() {
                         Office
                       </h3>
                       <p className="text-charcoal-600">
-                        Westlands, Nairobi
+                        <b>Nairobi Office: </b>Ruiru Bypass, Nairobi
                         <br />
-                        Woodvale Grove, Kenya
+                        <b>Mombasa Office: </b>Ukunda / Diani, Kwale
                       </p>
                       <p className="text-charcoal-600 text-sm">
                         By appointment only
@@ -313,9 +314,7 @@ export default function Contact() {
                             <SelectItem value="office-partitioning">
                               Office Partitioning
                             </SelectItem>
-                            <SelectItem value="other">
-                              Other
-                            </SelectItem>
+                            <SelectItem value="other">Other</SelectItem>
                           </SelectContent>
                         </Select>
                         <FormMessage />

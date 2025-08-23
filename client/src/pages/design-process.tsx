@@ -14,28 +14,35 @@ export default function DesignProcess() {
               Our <span className="text-gold-500">Design Process</span>
             </h1>
             <p className="text-xl text-charcoal-600 max-w-3xl mx-auto">
-              A systematic approach that ensures your vision becomes reality through careful planning and expert execution
+              A systematic approach that ensures your vision becomes reality
+              through careful planning and expert execution
             </p>
           </div>
 
           {/* Process Steps */}
           <div className="max-w-6xl mx-auto">
             {PROCESS_STEPS.map((step, index) => (
-              <div 
+              <div
                 key={step.number}
                 className={`flex flex-col lg:flex-row items-center gap-12 mb-20 ${
-                  index % 2 === 1 ? 'lg:flex-row-reverse' : ''
+                  index % 2 === 1 ? "lg:flex-row-reverse" : ""
                 }`}
                 data-testid={`step-${step.number}`}
               >
                 <div className="lg:w-1/2">
                   <div className="flex items-center mb-6">
                     <div className="w-12 h-12 bg-gold-500 rounded-full flex items-center justify-center mr-4">
-                      <span className="text-white font-bold text-xl">{step.number}</span>
+                      <span className="text-white font-bold text-xl">
+                        {step.number}
+                      </span>
                     </div>
-                    <h3 className="font-serif text-3xl font-bold text-charcoal-800">{step.title}</h3>
+                    <h3 className="font-serif text-3xl font-bold text-charcoal-800">
+                      {step.title}
+                    </h3>
                   </div>
-                  <h4 className="text-xl font-semibold text-charcoal-700 mb-4">{step.subtitle}</h4>
+                  <h4 className="text-xl font-semibold text-charcoal-700 mb-4">
+                    {step.subtitle}
+                  </h4>
                   <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
                     {step.description}
                   </p>
@@ -63,13 +70,18 @@ export default function DesignProcess() {
           {/* CTA Section */}
           <div className="text-center mt-16 bg-cream-50 rounded-3xl p-12">
             <h3 className="font-serif text-3xl font-bold text-charcoal-800 mb-6">
-              Ready to Start Your <span className="text-gold-500">Design Journey</span>?
+              Ready to Start Your{" "}
+              <span className="text-gold-500">Design Journey</span>?
             </h3>
             <p className="text-lg text-charcoal-600 mb-8 max-w-2xl mx-auto">
-              Let's discuss your project and see how our proven process can transform your space
+              Let's discuss your project and see how our proven process can
+              transform your space
             </p>
             <Link href="/contact" data-testid="button-start-project">
-              <Button size="lg" className="bg-gold-500 text-white hover:bg-gold-600">
+              <Button
+                size="lg"
+                className="bg-gold-500 text-white hover:bg-gold-600"
+              >
                 Start Your Project
               </Button>
             </Link>

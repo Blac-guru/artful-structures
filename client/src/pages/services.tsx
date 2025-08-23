@@ -1,4 +1,5 @@
-import { Link } from "wouter";
+import { useEffect } from "react";
+import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -184,6 +185,25 @@ const whyChooseUs = [
 ];
 
 export default function Services() {
+  const [location] = useLocation();
+
+  useEffect(() => {
+    // Check if there's a hash in the URL and scroll to that section
+    if (location.includes('#')) {
+      const hash = location.split('#')[1];
+      const element = document.getElementById(hash);
+      if (element) {
+        // Small delay to ensure page has rendered
+        setTimeout(() => {
+          element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }, 100);
+      }
+    }
+  }, [location]);
+
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
@@ -208,7 +228,8 @@ export default function Services() {
             {services.map((service, index) => (
               <div
                 key={service.id}
-                className={`grid lg:grid-cols-2 gap-12 items-center ${
+                id={service.id}
+                className={`grid lg:grid-cols-2 gap-12 items-center scroll-mt-24 ${
                   index % 2 === 1 ? "lg:grid-flow-col-dense" : ""
                 }`}
                 data-testid={`service-${service.id}`}

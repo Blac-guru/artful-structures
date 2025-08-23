@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { useLocation } from 'wouter';
+import { useState, useEffect } from "react";
+import { useLocation } from "wouter";
 
 export function useNavbarTheme() {
   const [location] = useLocation();
@@ -9,19 +9,21 @@ export function useNavbarTheme() {
     const checkBackground = () => {
       const scrollY = window.scrollY;
       const windowHeight = window.innerHeight;
-      
+
       // Hero section detection (first screen on home page)
-      const isInHeroSection = location === '/' && scrollY < windowHeight * 0.8;
-      
+      const isInHeroSection = location === "/" && scrollY < windowHeight * 0.8;
+
       // Footer detection (bottom of any page)
       const documentHeight = document.documentElement.scrollHeight;
       const currentPosition = scrollY + windowHeight;
-      const isNearFooter = currentPosition > documentHeight - 200;
-      
+      const isNearFooter = currentPosition > documentHeight - 300;
+
       // Dark sections detection for other pages
-      const darkSections = document.querySelectorAll('[data-dark-section="true"], .bg-charcoal-800, .bg-charcoal-700');
+      const darkSections = document.querySelectorAll(
+        '[data-dark-section="true"], .bg-charcoal-800, .bg-charcoal-700',
+      );
       let isOverDarkSection = false;
-      
+
       darkSections.forEach((section) => {
         const rect = section.getBoundingClientRect();
         // Check if navbar (top 80px) overlaps with dark section
@@ -29,19 +31,19 @@ export function useNavbarTheme() {
           isOverDarkSection = true;
         }
       });
-      
+
       setIsDarkBackground(isInHeroSection || isNearFooter || isOverDarkSection);
     };
 
     // Check on mount and scroll
     checkBackground();
-    window.addEventListener('scroll', checkBackground);
-    
+    window.addEventListener("scroll", checkBackground);
+
     // Check on route change
     const timer = setTimeout(checkBackground, 100);
 
     return () => {
-      window.removeEventListener('scroll', checkBackground);
+      window.removeEventListener("scroll", checkBackground);
       clearTimeout(timer);
     };
   }, [location]);
