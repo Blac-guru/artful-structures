@@ -116,8 +116,10 @@ export default function Contact() {
                       <h3 className="font-semibold text-charcoal-800 mb-2">
                         Phone
                       </h3>
-                      <p className="text-charcoal-600">+254 719118500 /</p>
-                      <p className="text-charcoal-600">+254 727166425</p>
+                      <p className="text-gold-500">LANDO W. TITUS</p>
+                      <p className="text-charcoal-600">+254 719 118 500</p>
+                      <p className="text-gold-500">TUMU MWAMINDI</p>
+                      <p className="text-charcoal-600">+254 727 166 425</p>
                       <p className="text-charcoal-600 text-sm">
                         Mon - Fri, 8:00 AM - 6:00 PM
                       </p>

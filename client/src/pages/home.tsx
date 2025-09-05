@@ -38,7 +38,7 @@ export default function Home() {
                 key={index}
                 title={service.title}
                 description={service.description}
-                image={service.image}
+                image={service.images?.[0]}
                 link={service.link}
               />
             ))}

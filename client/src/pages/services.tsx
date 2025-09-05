@@ -25,7 +25,7 @@ const services = [
       "Transform your home into a sophisticated sanctuary that reflects your personality and lifestyle. Our comprehensive home interior design service combines elegant aesthetics with functional living solutions, creating spaces that are both beautiful and practical for modern family life.",
     icon: <Home className="w-8 h-8" />,
     image:
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1036777293444526725/original/cefd30cc-b5f2-4780-bfc7-a67978689e87.jpeg?im_w=720",
     features: [
       "Complete home design and styling",
       "Living room and bedroom design",
@@ -49,7 +49,7 @@ const services = [
       "Create impressive commercial environments that enhance productivity, reflect your brand identity, and leave lasting impressions on clients. From modern offices to retail spaces, we design commercial interiors that drive business success and employee satisfaction.",
     icon: <Building className="w-8 h-8" />,
     image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      "https://furniturepalacekenya.com/wp-content/uploads/2025/01/0O2A4852-768x512.jpg",
     features: [
       "Corporate office design and layout",
       "Reception and lobby areas",
@@ -73,7 +73,7 @@ const services = [
       "Elevate your spaces with our expertly crafted gypsum ceiling solutions. We design and install stunning ceiling features that add architectural interest, improve acoustics, and provide elegant lighting integration while maintaining the highest standards of craftsmanship.",
     icon: <Lightbulb className="w-8 h-8" />,
     image:
-      "https://images.unsplash.com/photo-1563973153236-794eef98609f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://i.ibb.co/9kqVWWF5/Whats-App-Image-2025-09-02-at-23-42-26.jpg",
     features: [
       "Custom gypsum ceiling design",
       "Coffered and tray ceiling installation",
@@ -97,7 +97,7 @@ const services = [
       "Complete your interior transformation with our comprehensive flooring solutions. From luxurious hardwood to contemporary tiles, we provide expert installation and finishing services that create stunning foundations for your beautifully designed spaces.",
     icon: <CheckCircle className="w-8 h-8" />,
     image:
-      "https://images.unsplash.com/photo-1569152811536-fb47aced8409?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://i.ibb.co/YFmrRwYD/Whats-App-Image-2025-09-02-at-23-42-30-1.jpg",
     features: [
       "Hardwood flooring installation",
       "Luxury vinyl and laminate flooring",
@@ -145,7 +145,7 @@ const services = [
       "Optimize your workspace with our innovative office partitioning systems. We create flexible, functional divisions that enhance privacy, improve acoustics, and adapt to changing business needs while maintaining an open, collaborative atmosphere.",
     icon: <Building className="w-8 h-8" />,
     image:
-      "https://images.unsplash.com/photo-1564540574859-0dfb63985953?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://www.officeworkdesign.com/wp-content/uploads/2023/02/modular-office-partitions-11.jpg",
     features: [
       "Glass partition systems",
       "Movable and modular partitions",
@@ -189,15 +189,15 @@ export default function Services() {
 
   useEffect(() => {
     // Check if there's a hash in the URL and scroll to that section
-    if (location.includes('#')) {
-      const hash = location.split('#')[1];
+    if (location.includes("#")) {
+      const hash = location.split("#")[1];
       const element = document.getElementById(hash);
       if (element) {
         // Small delay to ensure page has rendered
         setTimeout(() => {
-          element.scrollIntoView({ 
-            behavior: 'smooth',
-            block: 'start'
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
           });
         }, 100);
       }
@@ -319,7 +319,7 @@ export default function Services() {
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl font-bold text-charcoal-800 mb-6">
               Why Choose{" "}
-              <span className="text-gold-500">Artful Structures</span>
+              <span className="text-gold-500">Artful Structures Limited</span>
             </h2>
             <p className="text-lg text-charcoal-600 max-w-2xl mx-auto">
               We combine creativity, expertise, and dedication to deliver

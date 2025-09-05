@@ -28,7 +28,7 @@ export default function Portfolio() {
     activeCategory === "all"
       ? PORTFOLIO_PROJECTS
       : PORTFOLIO_PROJECTS.filter(
-          (project) => project.category === activeCategory,
+          (project) => project.category === activeCategory
         );
 
   const openModal = (project: any) => {
@@ -97,7 +97,7 @@ export default function Portfolio() {
                 data-testid={`project-${project.id}`}
               >
                 <img
-                  src={project.image}
+                  src={project.images?.[0]} // ✅ show the first image
                   alt={project.title}
                   className="w-full h-64 object-cover"
                 />
@@ -147,8 +147,12 @@ export default function Portfolio() {
             ? {
                 title: selectedProject.title,
                 category: selectedProject.categoryLabel,
-                image: selectedProject.image,
+                images: selectedProject.images || [selectedProject.image], // ✅ fallback
                 description: selectedProject.description,
+                location: selectedProject.location,
+                size: selectedProject.size,
+                duration: selectedProject.duration,
+                client: selectedProject.client,
               }
             : null
         }
